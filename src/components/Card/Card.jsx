@@ -61,6 +61,6 @@ export default function Card() {
                     <Cards img={e.img} title={e.title} text={e.text} />
                 ))}
             </div>
-        </Container  >
+        </Container >
     )
 }
