@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 import cls from './Theme.module.scss'
 export default function Theme({ title }) {
     return (

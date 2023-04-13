@@ -70,18 +70,18 @@ export default function NewsCart() {
 
                         <div className={cls.NewsCart__Cards} key={e.id}>
                             <div className={cls.NewsCart__Cards__left}>
-                                <img src={e[0].img} alert='hello' />
+                                <img src={e[0].img} alt='hello' />
                                 <h3 className={cls.NewsCart__Cards__title}>{e[0].title}</h3>
                                 <span className={cls.NewsCart__Cards__data}>{e[0].data}</span>
                             </div>
                             <div className={cls.NewsCart__Cards__right}>
                                 <div>
-                                    <img src={e[1]?.img} alert='hello' />
+                                    <img src={e[1]?.img} alt='hello' />
                                     <p className={cls.NewsCart__Cards__right__title}>{e[1]?.title}</p>
                                     <p className={cls.NewsCart__Cards__right__data}>{e[1]?.data}</p>
                                 </div>
                                 <div>
-                                    <img src={e[2]?.img} alert='hello' />
+                                    <img src={e[2]?.img} alt='hello' />
 
                                     <p className={cls.NewsCart__Cards__right__title}>{e[2]?.title}</p>
                                     <p className={cls.NewsCart__Cards__right__data}>{e[2]?.data}</p>
