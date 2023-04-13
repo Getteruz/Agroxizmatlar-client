@@ -1,0 +1,45 @@
+.Card {
+    width: 100%;
+    max-width: 315px;
+    background: #F4F3F1;
+    border-radius: 12px;
+    padding: 28px 41px 44px 30px;
+    margin-bottom: 20px;
+
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        color: #222222;
+        margin-top: 5px;
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #222222;
+
+    }
+
+    &__box {
+        background: linear-gradient(311.19deg, #4EB027 0.71%, rgba(78, 176, 39, 0) 81.43%);
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        position: relative;
+
+        &>img {
+            position: absolute;
+            top: -6px;
+            left: -5px;
+        }
+    }
+}

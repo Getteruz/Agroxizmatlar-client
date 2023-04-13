@@ -1,0 +1,14 @@
+.Card {
+
+
+    &__Container {
+        padding-top: 80px !important;
+        padding-bottom: 100px !important;
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
