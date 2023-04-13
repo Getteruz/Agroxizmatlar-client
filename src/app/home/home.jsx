@@ -5,6 +5,7 @@ import ContactHeader from '../../components/contact/contactHeader/ContactHeader'
 import Header from '../../components/header/Header'
 import Navbar from '../../components/Navbar/Navbar'
 import NewsCart from '../../components/NewsCart/NewsCart'
+import STA from '../../components/STA/STA'
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Navbar />
             <Card />
             <NewsCart />
+            <STA />
         </>
     )
 }
