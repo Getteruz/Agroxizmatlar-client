@@ -11,13 +11,13 @@ const data = [
     {
         id: 1,
         img: websvg1,
-        title: 'Markaziy apparat',
+        title: 'Online kredit ',
         text: "Agentlikning markaziy apparat hodimlar ma'lumotlari bilan tanishish sahifasi"
     },
     {
         id: 2,
         img: websvg2,
-        title: 'Yangiliklar',
+        title: 'Subsidiya olish',
         text: "Agentlik va qishloq xo'jaligi faoliyatida yuz berayotgan yangiliklar bilan tanishish sahifasi"
     },
     {
@@ -41,25 +41,20 @@ const data = [
     {
         id: 6,
         img: websvg2,
-        title: 'Yangiliklar',
+        title: 'Kelib tushgan murojatlar',
         text: "Agentlik va qishloq xo'jaligi faoliyatida yuz berayotgan yangiliklar bilan tanishish sahifasi"
     },
     {
         id: 7,
-        img: websvg3,
-        title: "Me'yoriy hujjatlar",
-        text: "Agentlik va qishloq xo'jaligi faoliyatida yuz ."
+        img: websvg2,
+        title: 'Xalq bilan muloqot',
+        text: "Agentlik va qishloq xo'jaligi faoliyatida yuz berayotgan yangiliklar bilan tanishish sahifasi"
     },
-    {
-        id: 8,
-        img: websvg4,
-        title: "Ochiq ma'lumotlar",
-        text: "Agentlikning ochiq ma'lumotlari joylangan sahifasi"
-    }
 ]
 export default function Card() {
     return (
         <Container className={cls.Card__Container} >
+            <div className={cls.Card__box}></div>
             <Theme title={"INTEREKTIV XIZMATLAR"} />
             <div className={cls.Card__Container__wrap}>
                 {data.map(e => (

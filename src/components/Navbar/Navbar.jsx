@@ -2,8 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Container from '../ul/container/Container'
 import cls from './Navbar.module.scss'
-import img from '../../img/image.svg'
+import img1 from '../../img/image.svg'
 import img2 from '../../img/image 22.png'
+
+const data = [
+    {
+        id: 1,
+        img: img1,
+        title: "Bog'dorchilik va issiqxona xo'jaliklarini barqaror rivojlanishini",
+        data: '28 Mart 2023'
+    },
+    {
+        id: 2,
+        img: img2,
+        title: "Bog'dorchilik va issiqxona xo'jaliklarini barqaror rivojlanishini",
+        data: '28 Mart 2023'
+    }
+]
 
 export default function Navbar() {
     return (
@@ -20,10 +35,17 @@ export default function Navbar() {
                 </ul>
             </Container>
             <Container className={cls.Navbar__bottom}>
-                <div>
-                    <img src={img} alt="img" />
-                    <img src={img2} alt="img" />
-                </div>
+
+                {
+                    data?.map(e => (
+                        <div className={cls.Navbar__Card} key={e?.id}>
+                            <img src={e.img} alt="img" />
+                            <p >{e?.title}</p>
+                            <p>{e?.data}</p>
+                        </div>
+                    ))
+                }
+
 
             </Container>
 
