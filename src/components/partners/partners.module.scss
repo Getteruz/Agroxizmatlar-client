@@ -1,0 +1,26 @@
+.partners {
+    padding-top: 150px;
+    padding-bottom: 90px;
+
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        color: #283437;
+        margin-bottom: 63px;
+
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-right: 20px;
+    }
+}

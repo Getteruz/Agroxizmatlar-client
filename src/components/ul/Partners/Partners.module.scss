@@ -1,0 +1,19 @@
+.PartnersCart {
+    background: #F4F3F1;
+    border-radius: 16px;
+    padding: 19px 23px 18px 24px;
+    text-align: center;
+    width: 100%;
+    max-width: 315px;
+
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #121212;
+        margin-top: 17px;
+    }
+}

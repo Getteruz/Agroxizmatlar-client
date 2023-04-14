@@ -1,0 +1,49 @@
+.ContactFooter {
+    padding-top: 95px;
+    padding-bottom: 123px;
+    background: #F5F3EF;
+
+    &__Container {
+        display: flex !important;
+        align-items: flex-start !important;
+
+
+    }
+
+    img {
+        margin-right: 133px;
+    }
+
+    ul {
+        display: flex;
+        align-items: flex-start;
+        gap: 80px;
+
+        &:nth-child(2) {
+            gap: 70px;
+            margin-right: 163px;
+        }
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #283437;
+
+            a {
+                color: #283437;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+}
