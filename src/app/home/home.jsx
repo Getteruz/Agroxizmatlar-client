@@ -2,6 +2,7 @@ import React from 'react'
 import About from '../../components/About/About'
 import Card from '../../components/Card/Card'
 import ContactHeader from '../../components/contact/contactHeader/ContactHeader'
+import Footer from '../../components/footer/Footer'
 
 import Header from '../../components/header/Header'
 import Navbar from '../../components/Navbar/Navbar'
@@ -18,6 +19,7 @@ export default function Home() {
             <NewsCart />
             <STA />
             <About />
+            <Footer />
         </>
     )
 }

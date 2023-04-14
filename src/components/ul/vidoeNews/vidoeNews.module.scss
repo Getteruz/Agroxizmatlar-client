@@ -1,0 +1,62 @@
+.vidoeNews {
+    width: 100%;
+    background: #4EB027;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 63px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+
+    &__wrap {
+        position: relative;
+        height: 480px;
+    }
+
+    &__img {
+        border-radius: 50%;
+        padding: 26px;
+        padding-bottom: 28px;
+        object-fit: cover;
+    }
+
+    &__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 36px;
+        color: #FFFFFF;
+        width: 100%;
+        max-width: 705px;
+    }
+
+    &__box {
+        position: absolute;
+        width: 100%;
+        max-width: 1208px;
+        height: 440px;
+        background: #1E2E32;
+        opacity: 0.9;
+        border-radius: 12px;
+        top: 58px;
+        left: 56px;
+        z-index: 8;
+    }
+
+    &__box2 {
+        position: absolute;
+        background: #1E2E32;
+        width: 100%;
+        max-width: 1038px;
+        height: 440px;
+        opacity: 0.4;
+        border-radius: 12px;
+        top: 78px;
+        left: 141px;
+        z-index: 7;
+    }
+}

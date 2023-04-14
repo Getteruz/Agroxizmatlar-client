@@ -9,7 +9,7 @@
     background-color: transparent;
     display: flex;
     align-items: center;
-
+    cursor: pointer;
     &::after {
         content: '';
         display: inline-block;

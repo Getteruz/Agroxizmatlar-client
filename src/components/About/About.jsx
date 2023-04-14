@@ -8,7 +8,8 @@ import user3 from '../../img/Ellipse 1276.svg'
 import user4 from '../../img/Ellipse1277.svg'
 import user5 from '../../img/Ellipse1278.svg'
 import user6 from '../../img/Ellipse1279.svg'
-
+import VidoeNews from '../ul/vidoeNews/vidoeNews'
+import vidio from '../../img/Ellipse1406.jpg'
 const users = [
     {
         id: 1,
@@ -41,6 +42,11 @@ const users = [
         img: user6
     }
 ]
+const news = {
+    id: 1,
+    file: vidio,
+    text: "Ozbekiston Respublikasi Prezidentining “O'zbekiston Respublikasida bog'dorchilik va issiqxona xo'jaligini yanada rivojlantirish chora-tadbirlari to'g'risida” 20-mart 2019- yildagi PQ-4246-sonli qaroriga muvofiq, O'zbekiston Respublikasi Qishloq xo'jaligi vazirligi huzurida Bog'dorchilik va issiqxona xo'jaligini rivojlantirish agentligi tashkil etilgan."
+}
 
 export default function About() {
     return (
@@ -50,6 +56,7 @@ export default function About() {
                 <p className={cls.About__text}>Bog'dorchilik va issiqxona xo'jaliklarini <span>barqaror</span>   rivojlanishini</p>
                 <p className={cls.About__textOur}>Bizning faxriylarimiz </p>
                 <Veterans user={users} />
+                <VidoeNews news={news} />
             </Container>
         </div>
     )
