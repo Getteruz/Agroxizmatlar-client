@@ -2,9 +2,9 @@ import React from 'react'
 import cls from './NewsCart.module.scss'
 import Container from '../ul/container/Container'
 import Theme from '../ul/Theme/Theme'
-import img1 from '../../img/Rectangle11001574.png'
-import img2 from '../../img/Rectangle111001574.png'
-import img3 from '../../img/Rectangle111001574s.png'
+import img1 from '../../img/Rectangle11001574.svg'
+import img2 from '../../img/Rectanglesa111001574.png'
+import img3 from '../../img/aRectangle111001574.png'
 import Marquee from "react-fast-marquee";
 
 const data = [
@@ -70,18 +70,18 @@ export default function NewsCart() {
 
                         <div className={cls.NewsCart__Cards} key={e.id}>
                             <div className={cls.NewsCart__Cards__left}>
-                                <img src={e[0].img} alt='hello' />
+                                <img src={e[0].img} alt='hello' width={538} height={375} />
                                 <h3 className={cls.NewsCart__Cards__title}>{e[0].title}</h3>
                                 <span className={cls.NewsCart__Cards__data}>{e[0].data}</span>
                             </div>
                             <div className={cls.NewsCart__Cards__right}>
                                 <div>
-                                    <img src={e[1]?.img} alt='hello' />
+                                    <img src={e[1]?.img} alt='hello' width={437} height={260} />
                                     <p className={cls.NewsCart__Cards__right__title}>{e[1]?.title}</p>
                                     <p className={cls.NewsCart__Cards__right__data}>{e[1]?.data}</p>
                                 </div>
                                 <div>
-                                    <img src={e[2]?.img} alt='hello' />
+                                    <img src={e[2]?.img} alt='hello' width={437} height={260} />
 
                                     <p className={cls.NewsCart__Cards__right__title}>{e[2]?.title}</p>
                                     <p className={cls.NewsCart__Cards__right__data}>{e[2]?.data}</p>
