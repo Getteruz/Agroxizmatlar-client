@@ -1,4 +1,5 @@
 import React from 'react'
+import About from '../../components/About/About'
 import Card from '../../components/Card/Card'
 import ContactHeader from '../../components/contact/contactHeader/ContactHeader'
 
@@ -16,6 +17,7 @@ export default function Home() {
             <Card />
             <NewsCart />
             <STA />
+            <About />
         </>
     )
 }

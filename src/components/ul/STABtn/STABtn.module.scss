@@ -1,0 +1,26 @@
+.STABtn {
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 51px 0;
+    width: 100%;
+    max-width: 427px;
+
+    &__box {
+        background: linear-gradient(311.19deg, #4EB027 0.71%, rgba(78, 176, 39, 0) 81.43%);
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        position: relative;
+
+        &>img {
+            position: absolute;
+            top: -6px;
+            left: -5px;
+        }
+
+    }
+}

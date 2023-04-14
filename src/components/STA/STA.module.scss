@@ -1,0 +1,14 @@
+.STA {
+    background: #F5F3EF;
+    padding-top: 71px;
+    padding-bottom: 110px;
+
+    &__btn {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 62px;
+
+    }
+}

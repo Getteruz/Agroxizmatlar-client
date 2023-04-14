@@ -64,8 +64,8 @@ export default function NewsCart() {
             <Container>
                 <Theme title={'YANGILIKLAR'} />
             </Container>
-            <Marquee speed={70} pauseOnHover={true} gradient={false} className={cls.NewsCart__Marquee}>
-                <div className={cls.NewsCart__bottom} >
+            <Marquee speed={70} pauseOnHover={true} play={true} gradient={false} className={cls.NewsCart__Marquee}>
+                <div className={cls.NewsCart__bottom} style={{ marginLeft: "10px" }} >
                     {newArr.map(e => (
 
                         <div className={cls.NewsCart__Cards} key={e.id}>
