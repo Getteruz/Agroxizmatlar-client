@@ -60,36 +60,34 @@ const link = [
 ]
 
 export default function Navbar() {
-    const [size, setSize] = useState({ width: 0, height: 0, x: 0, y: 0 })
+    const [size, setSize] = useState({ width: 131, height: 49, x: 2, y: 2 })
     const router = useLocation()
 
-
-
     const func = () => {
-        if (router.pathname === '/') setSize({ width: 0, height: 0, x: 0, y: 0 })
+        if (router.pathname === '/') setSize({ width: 131, height: 49, x: 2, y: 2 })
         const el = document.getElementById(link.find(link => link.link === router.pathname)?.id || link[0]?.id)
+        setSize(el ? getElementSize(el) : { width: 131, height: 49, x: 2, y: 2 })
 
-        setSize(el ? getElementSize(el) : { x: 0, y: 0 })
     }
 
     useEffect(() => {
         func()
-    }, [router.pathname, link])
+    }, [router, link])
     return (
         <div className={cls.Navbar} >
             <Container>
                 <div className={cls.Navbar__list}>
                     {link?.map(e => (
                         <NavLink
-                            key={link.id}
-                            id={link.id}
+                            key={e.id}
+                            id={e.id}
                             className={cls.Navbar__item}
-                            href={e.link}
+                            to={e.link}
                             active={true}
                             whiteMode={true}
                             onMouseOver={(el) => {
                                 setSize(getElementSize(el.target))
-                                el.target.style.color = " #017802"
+                                el.target.style.color = "#017802"
 
                             }}
 
@@ -102,16 +100,16 @@ export default function Navbar() {
                         </NavLink>
 
                     ))}
-                    <div
-                        className={cls.link__active}
+
+                    <div className={cls.Navbar__active}
                         style={{
                             width: size.width,
                             height: size.height,
                             top: size.y,
                             left: size.x
                         }}
-                    >
-                    </div>
+                    />
+
                 </div>
             </Container>
             <Container className={cls.Navbar__bottom}>

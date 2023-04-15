@@ -60,3 +60,7 @@ ul{
   font-style: normal;
   font-display: swap;
 }
+
+.active {
+  color: #017802 !important;
+}
