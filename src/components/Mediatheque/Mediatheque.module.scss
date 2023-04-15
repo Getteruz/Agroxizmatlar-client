@@ -1,0 +1,84 @@
+.Mediatheque {
+    padding-bottom: 150px;
+
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        color: #283437;
+        margin-bottom: 40px;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__btn {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #283437;
+        background: #F5F3EF;
+        border-radius: 7px;
+        border: none;
+        padding: 15px 20px;
+        margin-right: 7px;
+    }
+
+    &__buttom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    &__left {
+        width: 100%;
+        max-width: 680px;
+        height: 253px;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+
+            &:first-child {
+                left: 0;
+            }
+
+            &:nth-child(2) {
+                left: 127px;
+            }
+
+            &:last-child {
+                right: 0;
+            }
+        }
+    }
+
+    &__right {
+        width: 100%;
+        max-width: 490px;
+
+        &__title {
+            width: 100%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            color: #283437;
+            margin-bottom:58px;
+        }
+    }
+}

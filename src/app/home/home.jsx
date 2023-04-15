@@ -6,6 +6,7 @@ import ContactHeader from '../../components/contact/contactHeader/ContactHeader'
 import Footer from '../../components/footer/Footer'
 
 import Header from '../../components/header/Header'
+import Mediatheque from '../../components/Mediatheque/Mediatheque'
 import Navbar from '../../components/Navbar/Navbar'
 import NewsCart from '../../components/NewsCart/NewsCart'
 import Partners from '../../components/partners/Partners'
@@ -22,6 +23,7 @@ export default function Home() {
             <NewsCart />
             <STA />
             <About />
+            <Mediatheque />
             <Questions />
             <Partners />
             <ContactFooter />
