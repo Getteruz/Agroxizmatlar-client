@@ -1,0 +1,113 @@
+.questions {
+    background: #F5F3EF;
+    padding-top: 80px;
+    padding-bottom: 200px;
+
+    &__container {
+        display: flex !important;
+        align-items: flex-start !important;
+        justify-content: space-between !important;
+
+    }
+
+    &_left {
+        width: 100%;
+        max-width: 419px;
+
+        &__title {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #283437;
+        }
+
+        &__text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            width: 100%;
+            color: #283437;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 873px;
+        z-index: 10;
+
+
+        &_div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 27px 30px;
+            background: #FFFFFF;
+            border-radius: 16px;
+        }
+
+        &__line {
+            width: 23px;
+            height: 3px;
+            background-color: black;
+            border-radius: 30px;
+            position: relative;
+
+            div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 23px;
+                height: 3px;
+                background-color: black;
+                border-radius: 30px;
+                transform: rotate(90deg);
+            }
+        }
+
+
+    }
+
+    &__linenone {
+        display: none;
+    }
+
+    &_item {
+        margin-bottom: 10px;
+
+        &__title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            color: #283437;
+        }
+
+        &__text {
+
+            width: 100%;
+            max-width: 849px;
+            margin: 0 12px;
+            background: #1E2E32;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            padding: 30px;
+            padding-bottom: 57px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: rgb(255, 255, 255, 0.6);
+
+        }
+    }
+}
