@@ -13,7 +13,7 @@ export default function Footer() {
                     <li className={cls.Footer__item}><Link to={'/'}>Публичная оферта</Link></li>
                     <li className={cls.Footer__item}> © 2023 ООО. All rights reserved</li>
                 </ul>
-                <Link to="https://getter.uz/" className={cls.Footer__getter}>Development by: <span>Getter</span></Link>
+                <Link to="https://getter.uz/" className={cls.Footer__getter}>Developed by: <span>Getter</span></Link>
             </Container>
         </footer>
     )
